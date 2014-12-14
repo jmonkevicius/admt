@@ -1,5 +1,13 @@
-insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values
-                    (1,'Europe','Italy','South Tyrol','Bolzano','39100','piazza Università','1');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (1, 'Europe', 'Italy', 'South Tyrol', 'Bolzano', '39100', 'piazza Università', '1');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (2,'North America', 'USA', 'California', 'San Francisco', 'CA 94043', 'Amphitheatre Parkway Mountain View', '1600');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (3, 'Europe', 'Lithuania', 'Vilniaus sav.', 'Vilnius', 'LT-71852', 'Savanoriu pr.', '268');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (4, 'Asia', 'China', 'Beijin man.', 'Beijin', 'CH-17171', 'Kampei str.', '154');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (5, 'Europe', 'Italy', 'South Tyrol', 'Bolzano', '39100', 'vialle Drusso', '299B');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (6, 'Europe', 'Italy', 'Veneto', 'Venice', '39300', 'Venice str.', '131');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (7,'Europe','Italy','South Tyrol','Bolzano','39100','Masseratti str','13');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (8, 'Europe', 'Germany', 'Bavaria', 'Munich', 'DE-123451', 'Deutschalnd str', '71');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (9, 'Asia', '', 'Taiwan', 'Taiwania', 'TW-123123', 'Cheese str', '7');
+insert into jm1_location (locationid, continent, country, province, city, zipcode, street, housenumber) values (10,'Europe','Italy','South Tyrol','Bolzano','39100','vialle Cartmnio','91C');
 --
 insert into jm1_studyprogram (studyprogramid, university, faculty, studyprogram, curriculum, studytype, degreetype, locationid) values ('1', 'Free University of Bozen', 'Computer Science', 'Computer Science and Engineering', '', '', 'Bachelor', '1');
 insert into jm1_studyprogram (studyprogramid, university, faculty, studyprogram, curriculum, studytype, degreetype, locationid) values ('2', 'Free University of Bozen', 'Computer Science', 'Computer Science', '', '', 'Master', '1');
