@@ -213,3 +213,34 @@ CREATE TABLE admt.jm1_student
    homelocationid number,
    studyprogramid number not null   
 );
+--fact table
+
+-- student action fact table
+declare
+   c int;
+   l_table_name varchar2(100);
+   l_drop_text varchar2(200);
+begin
+   l_table_name := 'jm1_student_action_fact';
+   dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
+   select count(*) into c from user_tables where table_name = upper(l_table_name);
+   if c = 1 then
+      l_drop_text := 'drop table ' || l_table_name;
+      execute immediate l_drop_text;
+      dbms_output.put_line('old table dropped.');
+   else dbms_output.put_line('Creating '|| l_table_name || ' table.');
+   end if;
+end;
+/
+
+CREATE TABLE admt.jm1_student_action_fact
+(
+   fact_id number PRIMARY KEY NOT NULL,
+   study_program_id number,
+   internship_id number,
+   date_id number not null,
+   student_id number not null,
+   language_id number,
+   event_id number not null
+);
+exit;

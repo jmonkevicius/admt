@@ -95,4 +95,24 @@ insert into jm1_languages_and_levels (language_id, language_code, language_level
 insert into jm1_languages_and_levels (language_id, language_code, language_level, language_name, language_description) values (23, 'RUS', 'C1', 'Russian', 'Can understand a wide range of demanding, longer texts, and recognise implicit meaning. Can express him/herself fluently and spontaneously without much obvious searching for expressions. Can use language flexibly and effectively for social, academic and professional purposes. Can produce clear, well-structured, detailed text on complex subjects, showing controlled use of organisational patterns, connectors and cohesive devices.');
 insert into jm1_languages_and_levels (language_id, language_code, language_level, language_name, language_description) values (24, 'RUS', 'C2', 'Russian', 'Can understand with ease virtually everything heard or read. Can summarise information from different spoken and written sources, reconstructing arguments and accounts in a coherent presentation. Can express him/herself spontaneously, very fluently and precisely, differentiating finer shades of meaning even in the most complex situations.');
 --
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values ('1', '2015-01-28 10:30', 'January', '2015', '1', '2014-2015', '5', '28', '28', 'Wednesday');
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values ('2', '2015-02-12 08:30', 'February', '2015', '1', '2014-2015', '8', '43', '12', 'Thursday');
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values
+                      ('3', '2015-02-13 14:00', 'February', '2015', '1', '2014-2015', '8', '44', '13', 'Wednesday')
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values
+                      ('4', '2015-02-05 14:00', 'February', '2015', '1', '2014-2015', '6', '36', '5' 'Thursday')
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values
+                      ('5', '2015-01-26 08:30', 'January', '2015', '1', '2014-2015', '5', '26', '26', 'Monday')
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values
+                      ('6', '2015-01-26 08:30', 'January', '2015', '1', '2014-2015', '5', '26', '26', 'Monday')
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values
+                      ('7', '2015-01-28 14:00', 'January', '2015', '1', '2014-2015', '5', '28', '28', 'Wednesday')
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values
+                      ('8', '2015-02-02 10:30', 'February', '2015', '1', '2014-2015', '6', '33', '2', 'Monday')
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values
+                      ('9', '2015-02-09 11:00', 'February', '2015', '1', '2014-2015', '7', '40', '9', 'Monday')
+insert into jm1_exactdate (dateid, exactdate, month, year, semester, academicyear, weekofyear, dayofyear, dayofmonth, dayofweek) values
+                      ('10' '2015-01-28 10:30', 'January', '2015', '1', '2014-2015', '5', '28', 'Wednesday')
+--
 commit;
+exit;
