@@ -26,7 +26,7 @@ CREATE TABLE admt.jm1_location
    city varchar2(50),
    zipcode varchar2(50),
    street varchar2(100),
-   housenumber varchar2(100)
+   housenumber varchar2(50)
 );
 
 --study program table
@@ -167,7 +167,7 @@ CREATE TABLE admt.jm1_exactdate
 (
    dateid number PRIMARY KEY NOT NULL,
    exactdate date not null,
-   month varchar2(20) not null,
+   month varchar2(10) not null,
    year number not null,
    semester varchar2(10) not null,
    academicyear varchar2(10) not null,
