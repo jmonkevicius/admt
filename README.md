@@ -18,6 +18,7 @@ http://www.inf.unibz.it/dis/teaching/ADMT/proj/prenner-project-2012.pdf
 
 
 How to run in Linux machine:
+
 1. you need to have rlwrap (source: http://freecode.com/projects/rlwrap).
 rlwrap is a readline wrapper, a small utility that uses the GNU readline library to allow the editing of keyboard input for any other command. It maintains a separate input history for each command, and can TAB-expand words using all previously seen words and/or a user-specified file.
 
