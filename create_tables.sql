@@ -5,7 +5,7 @@ declare
    l_table_name varchar2(100);
    l_drop_text varchar2(200);
 begin
-   l_table_name := 'jm1_location';
+   l_table_name := 'jre_location';
    dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
    select count(*) into c from user_tables where table_name = upper(l_table_name);
    if c = 1 then
@@ -17,7 +17,7 @@ begin
 end;
 /
 
-CREATE TABLE admt.jm1_location
+CREATE TABLE admt.jre_location
 (
    locationid number PRIMARY KEY NOT NULL,
    continent varchar2(50) not null,
@@ -35,7 +35,7 @@ declare
    l_table_name varchar2(100);
    l_drop_text varchar2(200);
 begin
-   l_table_name := 'jm1_studyprogram';
+   l_table_name := 'jre_studyprogram';
    dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
    select count(*) into c from user_tables where table_name = upper(l_table_name);
    if c = 1 then
@@ -47,7 +47,7 @@ begin
 end;
 /
 
-CREATE TABLE admt.jm1_studyprogram
+CREATE TABLE admt.jre_studyprogram
 (
    studyprogramid number PRIMARY KEY NOT NULL,
    university varchar2(100) not null,
@@ -65,7 +65,7 @@ declare
    l_table_name varchar2(100);
    l_drop_text varchar2(200);
 begin
-   l_table_name := 'jm1_event';
+   l_table_name := 'jre_event';
    dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
    select count(*) into c from user_tables where table_name = upper(l_table_name);
    if c = 1 then
@@ -77,7 +77,7 @@ begin
 end;
 /
 
-CREATE TABLE admt.jm1_event
+CREATE TABLE admt.jre_event
 (
    event_id number PRIMARY KEY NOT NULL,
    event_type varchar2(100) not null,
@@ -91,7 +91,7 @@ declare
    l_table_name varchar2(100);
    l_drop_text varchar2(200);
 begin
-   l_table_name := 'jm1_internship';
+   l_table_name := 'jre_internship';
    dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
    select count(*) into c from user_tables where table_name = upper(l_table_name);
    if c = 1 then
@@ -103,7 +103,7 @@ begin
 end;
 /
 
-CREATE TABLE admt.jm1_internship
+CREATE TABLE admt.jre_internship
 (
    internship_id number PRIMARY KEY NOT NULL,
    grade number,
@@ -123,7 +123,7 @@ declare
    l_table_name varchar2(100);
    l_drop_text varchar2(200);
 begin
-   l_table_name := 'jm1_languages_and_levels';
+   l_table_name := 'jre_languages_and_levels';
    dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
    select count(*) into c from user_tables where table_name = upper(l_table_name);
    if c = 1 then
@@ -135,7 +135,7 @@ begin
 end;
 /
 
-CREATE TABLE admt.jm1_languages_and_levels
+CREATE TABLE admt.jre_languages_and_levels
 (
    language_id number PRIMARY KEY NOT NULL,
    language_code varchar2(3) not null,
@@ -151,7 +151,7 @@ declare
    l_table_name varchar2(100);
    l_drop_text varchar2(200);
 begin
-   l_table_name := 'jm1_exactdate';
+   l_table_name := 'jre_exactdate';
    dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
    select count(*) into c from user_tables where table_name = upper(l_table_name);
    if c = 1 then
@@ -163,7 +163,7 @@ begin
 end;
 /
 
-CREATE TABLE admt.jm1_exactdate
+CREATE TABLE admt.jre_exactdate
 (
    dateid number PRIMARY KEY NOT NULL,
    exactdate date not null,
@@ -184,7 +184,7 @@ declare
    l_table_name varchar2(100);
    l_drop_text varchar2(200);
 begin
-   l_table_name := 'jm1_student';
+   l_table_name := 'jre_student';
    dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
    select count(*) into c from user_tables where table_name = upper(l_table_name);
    if c = 1 then
@@ -196,7 +196,7 @@ begin
 end;
 /
 
-CREATE TABLE admt.jm1_student
+CREATE TABLE admt.jre_student
 (
    studentid number PRIMARY KEY NOT NULL,
    studentcardid varchar2(8) not null,
@@ -221,7 +221,7 @@ declare
    l_table_name varchar2(100);
    l_drop_text varchar2(200);
 begin
-   l_table_name := 'jm1_student_action_fact';
+   l_table_name := 'jre_student_action_fact';
    dbms_output.put_line('checking if table ' || l_table_name || ' exists.');
    select count(*) into c from user_tables where table_name = upper(l_table_name);
    if c = 1 then
@@ -233,7 +233,7 @@ begin
 end;
 /
 
-CREATE TABLE admt.jm1_student_action_fact
+CREATE TABLE admt.jre_student_action_fact
 (
    fact_id number PRIMARY KEY NOT NULL,
    study_program_id number,
