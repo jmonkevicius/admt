@@ -26,6 +26,7 @@ rlwrap is a readline wrapper, a small utility that uses the GNU readline library
 more info here for Ubuntu users: https://help.ubuntu.com/community/Oracle%20Instant%20Client
 
 3. run this script to create table, fulfill tables.
+
 sh runscripts.sh
 
 
